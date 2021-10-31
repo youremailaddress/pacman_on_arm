@@ -1,0 +1,74 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 AutoBVT, Microsoft, LIC=ZB445-GXYKH-2LMCT-RTXJ6-6BJKA-JGEDC
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+D:\dashiyan\USER\LCD.uvprojx
+Project File Date:  09/21/2020
+
+<h2>Output:</h2>
+Rebuild target 'LCD'
+compiling main.c...
+main.c(150): warning:  #940-D: missing return statement at end of non-void function "deltax"
+  }
+main.c(164): warning:  #940-D: missing return statement at end of non-void function "deltay"
+  }
+main.c(229): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                                                                          lcd_wstr(3,1,str);
+main.c(263): warning:  #223-D: function "abs" declared implicitly
+          if (abs(x[4] - x[0]) + abs(y[4] - y[0]) > 32)
+main.c(289): warning:  #223-D: function "abs" declared implicitly
+                  int thisdist = abs(newx - targetx[i]) + abs(newy - targety[i]);
+main.c(300): warning:  #223-D: function "rand" declared implicitly
+                  int thisdist = rand();
+main.c(324): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+                                                                lcd_wstr(3,1,str);
+main.c: 7 warnings, 0 errors
+compiling stm32f4xx_it.c...
+compiling system_stm32f4xx.c...
+compiling 12864.c...
+compiling LED.c...
+compiling KEY.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+..\SYSTEM\usart\usart.c(24): warning:  #940-D: missing return statement at end of non-void function "_sys_exit"
+  } 
+..\SYSTEM\usart\usart.c: 1 warning, 0 errors
+assembling startup_stm32f40_41xxx.s...
+compiling misc.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_syscfg.c...
+compiling stm32f4xx_usart.c...
+linking...
+Program Size: Code=5304 RO-data=424 RW-data=2116 ZI-data=3084  
+FromELF: creating hex file...
+"..\OBJ\LCD.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\dashiyan\USER\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>
